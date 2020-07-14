@@ -1,0 +1,11 @@
+query CurrentUser {
+  viewer {
+    avatarUrl
+    repositories(first: 10) {
+      totalCount
+      nodes {
+        name
+      }
+    }
+  }
+}
